@@ -341,7 +341,7 @@ int ex06(){
 
 
 
-    printf("\n6 -Ler uma string de no m�ola mundo ximo 50 caracteres e mostrar quantas letras possui e quantos caracteres s�o n�meros e quantos n�o s�o nem n�meros nem letras.\n");
+    printf("\n6 -Ler uma string de no máximo 50 caracteres e mostrar quantas letras possui e quantos caracteres são números e quantos não são nem números nem letras.\n");
 
     char palavra [51];
     int numLetras = 0,numNumeros = 0, numEspaco = 0, i, tam;
@@ -355,7 +355,7 @@ int ex06(){
     printf("o tamanho :%i\n",tam);
 
     for(i = 0; i < tam; i++){
-        if(strchr(",.<.;:/?!@#$%&* ", palavra[i])!= NULL){              //filtro para nao letras e numeros contando o espa�o
+        if(strchr(",.<.;:/?!@#$&* ", palavra[i])!= NULL){              //filtro para nao letras e numeros contando o espa�o
             numEspaco++;
         }else if(strchr("0123456789", palavra[i])!= NULL ){            // filtro para numeros
             numNumeros++;
@@ -380,7 +380,7 @@ int ex07(){
     */
 
 
-    printf("\n7 �Ler uma string de no m�ximo 50 caracteres e criar uma nova string com seu inverso, isso � a ultima letra da primeira string ser� a primeira na nova string e assim sucessivamente.\n");
+    printf("\n7 - Ler uma string de no máximo 50 caracteres e criar uma nova string com seu inverso, isso  a ultima letra da primeira string será a primeira na nova string e assim sucessivamente.\n");
 
     char frase[51];
     int tam, i;
@@ -411,12 +411,12 @@ int ex08(){
                         AGORA VAI                   AGORAVAI
 */
 
-    printf("\n8 � Ler uma string de no m�ximo 50 caracteres e retire dessa string ola mundotodos os espa�os em branco. Utilize uma stringauxiliar.\n");
+    printf("\n8 - Ler uma string de no máximo 50 caracteres e retire dessa string ola mundotodos os espaços em branco. Utilize uma stringauxiliar.\n");
 
     int i=0,k=0, tam;
     char str[51],str2[51];
 
-     printf("Digite uma frase para retirar os espa�os: \n");
+     printf("Digite uma frase para retirar os espaços: \n");
      fflush(stdin);
      gets(str);
 
@@ -433,7 +433,7 @@ int ex08(){
         str2[k]=str[i];
         k++;
     }
-    printf("\nA frase sem espa�o: \n%s\n", str2);
+    printf("\nA frase sem espaço: \n\n%s\n", str2);
 
 
 return 0;
@@ -448,7 +448,7 @@ int ex09(){
 */
 
 
-    printf("\n9 �Ler uma stringde no ma�ximo 50 caracteres e retire dessa stringtodos os espa�os em branco. Sem utilize string auxiliar.\n");
+    printf("\n9 - Ler uma stringde no maáximo 50 caracteres e retire dessa stringtodos os espaços em branco. Sem utilize string auxiliar.\n");
 
     char str[51];
     int tam, count = 0, i;
@@ -480,7 +480,7 @@ int ex10(){
             vai mundo vai, mundo            5     1 total
 
 
-            observa��o: o programa econtra um erro na contagem
+            observação: o programa econtra um erro na contagem
 */
     printf("\n10 -Ler uma string de no máximo 50 caracteres em seguida leia outra string de no m�ximo 3 caracteres, informe quantas vezes a segunda string aparece na primeira string, e diga as posi��es iniciais em que ela aparece.\n");
 

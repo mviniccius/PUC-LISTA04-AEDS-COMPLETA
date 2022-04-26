@@ -69,7 +69,7 @@ int main(){
             ex10();
             break;
              default:
-                printf("Opção inávlida!\n");
+                printf("Opï¿½ï¿½o inï¿½vlida!\n");
 
         }
          printf("\nEscolha o exercicio entre 1 e 10 ou 0 para sair: ");
@@ -93,11 +93,11 @@ int ex01(){
                                                           MENOR: a
 */
 
-    //        OBSERVAÇÃO: Existe um problema de logica onde as vezes a maoir e menor palavra são trocadas
+    //        OBSERVAï¿½ï¿½O: Existe um problema de logica onde as vezes a maoir e menor palavra sï¿½o trocadas
 
 
 
-    printf("\n1 - Leia um conjunto indeterminado de palavras e ao final (estipule você um flag) informe qual foi a maior palavra e a menor palavra digitada, em tamanho e lexicograficamente.\n");
+    printf("\n1 - Leia um conjunto indeterminado de palavras e ao final (estipule vocï¿½ um flag) informe qual foi a maior palavra e a menor palavra digitada, em tamanho e lexicograficamente.\n");
 
 
     char palavra[51];
@@ -155,13 +155,13 @@ int ex02(){
                                             string  a                               0
     */
 
-    printf("\n2 – Ler um string e no máximo 50 caracteres e contar quantas letras A essa palavra possui.\n\n");
+    printf("\n2 ï¿½ Ler um string e no mï¿½ximo 50 caracteres e contar quantas letras A essa palavra possui.\n\n");
 
 
     char palavra [50];
     int numA, tam, i;
 
-    printf("\nDigite uma string de no máximo 50 caracteres: \n");
+    printf("\nDigite uma string de no mï¿½ximo 50 caracteres: \n");
 
     fflush(stdin);
     gets(palavra);
@@ -181,23 +181,23 @@ return 0;
 int ex03(){
     /*
                                             ENTRADA                  SAIDA
-                                            palavra                     A letra A na posição: 2
-                                                                        A letra A na posição: 4
-                                                                        A letra A na posição: 6
+                                            palavra                     A letra A na posiï¿½ï¿½o: 2
+                                                                        A letra A na posiï¿½ï¿½o: 4
+                                                                        A letra A na posiï¿½ï¿½o: 6
 
-                                            banana                      A letra A na posição: 2
-                                                                        A letra A na posição: 4
-                                                                        A letra A na posição: 6
+                                            banana                      A letra A na posiï¿½ï¿½o: 2
+                                                                        A letra A na posiï¿½ï¿½o: 4
+                                                                        A letra A na posiï¿½ï¿½o: 6
                                             string
     */
 
-    printf("\n3 – Ler uma string de no máximo 50 caracteres e indicar quais as posições da letra A nessa palavra.\n\n");
+    printf("\n3 ï¿½ Ler uma string de no mï¿½ximo 50 caracteres e indicar quais as posiï¿½ï¿½es da letra A nessa palavra.\n\n");
 
 
     char palavra [50];
     int numA, tam, i;
 
-    printf("\nDigite uma string de no máximo 50 caracteres: \n");
+    printf("\nDigite uma string de no mï¿½ximo 50 caracteres: \n");
 
     fflush(stdin);
     gets(palavra);
@@ -207,7 +207,7 @@ int ex03(){
     for(i = 0; i < tam; i++){
         if(strchr("aA", palavra[i])!= NULL){
             numA++;
-            printf("A letra A na posição: %i\n", i+1);
+            printf("A letra A na posiï¿½ï¿½o: %i\n", i+1);
         }
     }
 
@@ -218,26 +218,26 @@ return 0;
 int ex04(){
     /*
                                             ENTRADA                  SAIDA
-                                            banana n                    O caracter n na posição: 3
-                                                                        O caracter n na posição: 5
+                                            banana n                    O caracter n na posiï¿½ï¿½o: 3
+                                                                        O caracter n na posiï¿½ï¿½o: 5
                                                                         O caracter n apareceu 2 vezes
 
-                                            banana b                    O caracter b na posição: 1
+                                            banana b                    O caracter b na posiï¿½ï¿½o: 1
                                                                         O caracter b apareceu 1 vezes
 
-                                            banana a                    O caracter a na posição: 2
-                                                                        O caracter a na posição: 4
-                                                                        O caracter a na posição: 6
+                                            banana a                    O caracter a na posiï¿½ï¿½o: 2
+                                                                        O caracter a na posiï¿½ï¿½o: 4
+                                                                        O caracter a na posiï¿½ï¿½o: 6
                                                                         O caracter a apareceu 3 vezes
             */
 
-    printf("\n4 –Ler uma string de no máximo 50 caracteres e em seguida um caractere, mostrar quais as posições esse caractere aparece na string lida e quantas vezes ele apareceu.\n\n");
+    printf("\n4 ï¿½Ler uma string de no mï¿½ximo 50 caracteres e em seguida um caractere, mostrar quais as posiï¿½ï¿½es esse caractere aparece na string lida e quantas vezes ele apareceu.\n\n");
 
 
     char palavra [51], caracter[2];
     int numA, tam, i;
 
-    printf("\nDigite uma string de no máximo 50 caracteres: \n");
+    printf("\nDigite uma string de no mï¿½ximo 50 caracteres: \n");
 
     fflush(stdin);
     gets(palavra);
@@ -251,7 +251,7 @@ int ex04(){
     for(i = 0; i < tam; i++){
         if(strchr(caracter, palavra[i])!= NULL){
             numA++;
-            printf("O caracter %s na posição: %i\n", caracter, i+1);
+            printf("O caracter %s na posiï¿½ï¿½o: %i\n", caracter, i+1);
         }
     }
     printf("\nO caracter %s apareceu %i vezes\n", caracter, numA);
@@ -265,16 +265,16 @@ int ex05(){
 /*
 
                                             ENTRADA                  SAIDA
-                                            banana N                    O caracter  na posição: 3
-                                                                        O caracter  na posição: 5
+                                            banana N                    O caracter  na posiï¿½ï¿½o: 3
+                                                                        O caracter  na posiï¿½ï¿½o: 5
                                                                         O caracter  apareceu 2 vezes
 
-                                            Banana b                    O caracter  na posição: 1
+                                            Banana b                    O caracter  na posiï¿½ï¿½o: 1
                                                                         O caracter  apareceu 1 vezes
 
-                                            banAnA a                    O caracter  na posição: 2
-                                                                        O caracter  na posição: 4
-                                                                        O caracter  na posição: 6
+                                            banAnA a                    O caracter  na posiï¿½ï¿½o: 2
+                                                                        O caracter  na posiï¿½ï¿½o: 4
+                                                                        O caracter  na posiï¿½ï¿½o: 6
                                                                         O caracter  apareceu 3 vezes
 
 
@@ -286,12 +286,12 @@ int ex05(){
 
 
 
-    printf("\n5 - Ler uma stringde no máximo 50 caracteres e em seguida um caractere (entre A e z -consista se o caracteresta nesse intervalo), mostrar quais as posições esse caractere (maiúscula ou minúscula) na string lida e quantas vezes ele apareceu.\n");
+    printf("\n5 - Ler uma stringde no mï¿½ximo 50 caracteres e em seguida um caractere (entre A e z -consista se o caracteresta nesse intervalo), mostrar quais as posiï¿½ï¿½es esse caractere (maiï¿½scula ou minï¿½scula) na string lida e quantas vezes ele apareceu.\n");
 
     char palavra [51], caracter[2];
     int num, tam, i;
 
-    printf("\nDigite uma string de no máximo 50 caracteres: \n");
+    printf("\nDigite uma string de no mï¿½ximo 50 caracteres: \n");
 
     fflush(stdin);
     gets(palavra);
@@ -308,7 +308,7 @@ int ex05(){
     for(i = 0; i < tam; i++){
         if(strchr(caracter, palavra[i])!= NULL){
             num++;
-            printf("O caracter na posição: %i\n", i+1);
+            printf("O caracter na posiï¿½ï¿½o: %i\n", i+1);
         }
     }
     printf("\nO caracter apareceu %i vezes\n", num);
@@ -328,16 +328,16 @@ int ex06(){
                                             ola mundo...                Nao sao letra e nem numeros 4
                                                                         Numeros 0
                                                                         Letras 8
-                                            banana a                    O caracter a na posição: 2
-                                                                        O caracter a na posição: 4
-                                                                        O caracter a na posição: 6
+                                            banana a                    O caracter a na posiï¿½ï¿½o: 2
+                                                                        O caracter a na posiï¿½ï¿½o: 4
+                                                                        O caracter a na posiï¿½ï¿½o: 6
                                                                         O caracter a apareceu 3 vezes
 
 */
 
 
 
-    printf("\n6 -Ler uma string de no máola mundo ximo 50 caracteres e mostrar quantas letras possui e quantos caracteres são números e quantos não são nem números nem letras.\n");
+    printf("\n6 -Ler uma string de no mï¿½ola mundo ximo 50 caracteres e mostrar quantas letras possui e quantos caracteres sï¿½o nï¿½meros e quantos nï¿½o sï¿½o nem nï¿½meros nem letras.\n");
 
     char palavra [51];
     int numLetras = 0,numNumeros = 0, numEspaco = 0, i, tam;
@@ -351,7 +351,7 @@ int ex06(){
     printf("o tamanho :%i\n",tam);
 
     for(i = 0; i < tam; i++){
-        if(strchr(",.<.;:/?!@#$%&* ", palavra[i])!= NULL){              //filtro para nao letras e numeros contando o espaço
+        if(strchr(",.<.;:/?!@#$%&* ", palavra[i])!= NULL){              //filtro para nao letras e numeros contando o espaï¿½o
             numEspaco++;
         }else if(strchr("0123456789", palavra[i])!= NULL ){            // filtro para numeros
             numNumeros++;
@@ -376,7 +376,7 @@ int ex07(){
     */
 
 
-    printf("\n7 –Ler uma string de no máximo 50 caracteres e criar uma nova string com seu inverso, isso é a ultima letra da primeira string será a primeira na nova string e assim sucessivamente.\n");
+    printf("\n7 ï¿½Ler uma string de no mï¿½ximo 50 caracteres e criar uma nova string com seu inverso, isso ï¿½ a ultima letra da primeira string serï¿½ a primeira na nova string e assim sucessivamente.\n");
 
     char frase[51];
     int tam, i;
@@ -407,12 +407,12 @@ int ex08(){
                         AGORA VAI                   AGORAVAI
 */
 
-    printf("\n8 – Ler uma string de no máximo 50 caracteres e retire dessa string ola mundotodos os espaços em branco. Utilize uma stringauxiliar.\n");
+    printf("\n8 ï¿½ Ler uma string de no mï¿½ximo 50 caracteres e retire dessa string ola mundotodos os espaï¿½os em branco. Utilize uma stringauxiliar.\n");
 
     int i=0,k=0, tam;
     char str[51],str2[51];
 
-     printf("Digite uma frase para retirar os espaços: \n");
+     printf("Digite uma frase para retirar os espaï¿½os: \n");
      fflush(stdin);
      gets(str);
 
@@ -429,7 +429,7 @@ int ex08(){
         str2[k]=str[i];
         k++;
     }
-    printf("\nA frase sem espaço: \n%s\n", str2);
+    printf("\nA frase sem espaï¿½o: \n%s\n", str2);
 
 
 return 0;
@@ -444,12 +444,12 @@ int ex09(){
 */
 
 
-    printf("\n9 –Ler uma stringde no ma´ximo 50 caracteres e retire dessa stringtodos os espaços em branco. Sem utilize string auxiliar.\n");
+    printf("\n9 ï¿½Ler uma stringde no maï¿½ximo 50 caracteres e retire dessa stringtodos os espaï¿½os em branco. Sem utilize string auxiliar.\n");
 
     char str[51];
     int tam, count = 0, i;
 
-    printf("Digite uma frase para retirar os espaços: \n");
+    printf("Digite uma frase para retirar os espaï¿½os: \n");
     fflush(stdin);
     gets(str);
 
@@ -464,7 +464,7 @@ int ex09(){
     }
 
         str[count] = 0;
-     printf("\nA frase sem espaço: \n%s\n", str);
+     printf("\nA frase sem espaï¿½o: \n%s\n", str);
 
 return 0;
 }
@@ -476,9 +476,9 @@ int ex10(){
             vai mundo vai, mundo            5     1 total
 
 
-            observação: o programa econtra um erro na contagem
+            observaï¿½ï¿½o: o programa econtra um erro na contagem
 */
-    printf("\n10 -Ler uma string de no máximo 50 caracteres em seguida leia outra string de no máximo 3 caracteres, informe quantas vezes a segunda string aparece na primeira string, e diga as posições iniciais em que ela aparece.\n");
+    printf("\n10 -Ler uma string de no mï¿½ximo 50 caracteres em seguida leia outra string de no mï¿½ximo 3 caracteres, informe quantas vezes a segunda string aparece na primeira string, e diga as posiï¿½ï¿½es iniciais em que ela aparece.\n");
 
     char str[51], str2[4], aux[4];
     int tam, i, j, aux2;
@@ -504,12 +504,13 @@ int ex10(){
         }
 
         if(strcmp(str2, aux) == 0){
-            printf("\nA segunda string aparece na posição : %i\n",i +1);
+            printf("\nA segunda string aparece na posiï¿½ï¿½o : %i\n",i +1);
             aux2++;
         }
 
     }
     printf("\nlocal? %i\n",aux2+1);
+    
 return 0;
 }
 

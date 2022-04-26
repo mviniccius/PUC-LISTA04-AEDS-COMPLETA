@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1650854298 source:f:\documentos\engeharia de software\1 periodo\aeds\puc-lista04-aeds-completa\lista4string\main.c
-	<stdio.h>
-	<stdlib.h>
-	<locale.h>
-	<string.h>
-
